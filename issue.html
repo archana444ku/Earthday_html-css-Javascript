@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Issue Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-image: url('https://th.bing.com/th?id=OIP.ULYAdji59-8IMJDvaVN3NAHaEv&w=312&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2'); /* Background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+            padding: 0 20px;
+            background-color: #024388; /* Darker aqua background */
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 10px 0 #120333, 5px 0 0 #f8f7f7;
+        }
+        h1 {
+            color: #f9de59;
+        }
+
+        #logo-text a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: lighter;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .toggle {
+            font-size: 1.5rem;
+            color: rgb(252, 249, 249);
+            cursor: pointer;
+            display: none;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        nav ul li a:hover {
+            color: #e0ffff; /* Lighter aqua on hover */
+        }
+
+        .active {
+            color: #7f73fd;
+        }
+
+        #account-container a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        #account-container a:nth-child(1) {
+            background-color: #c1bbf5; /* Adjust button color if needed */
+            color: #fff;
+            font-weight: 900;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+
+    .active {
+      color: #7f73fd;
+    }
+
+    #account-container a {
+      text-decoration: none;
+      padding: 0 10px;
+      color: #fff;
+      font-weight: 300;
+    }
+
+    #account-container a:nth-child(1) {
+      background-color: #c1bbf5; /* Adjust button color if needed */
+      color: #fff;
+      font-weight: 900;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+
+    /* header main page style start here */
+
+    .container {
+      
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+     
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(227, 224, 224, 0.1); /* Subtle shadow */
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #eaaa07; /* Dark text color */
+    }
+     p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f5f3ed; /* Dark text color */
+     }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0a0a09; /* Dark text color */
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    .form-control label {
+      display: block;
+      margin-bottom: 5px;
+      color: #f0e9e9; /* Medium dark text color */
+    }
+
+    .form-control input,
+    .form-control select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc; /* Light border */
+    }
+
+    .form-control select {
+      height: 100px; /* Adjust height for better UI */
+    }
+
+    button {
+      background-color: #066810;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+  background-color: #828980;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: black;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #cae2e8;
+}
+
+
+.logo-link {
+  display: block; /* Ensures the link covers the entire logo */
+  text-align: center; /* Centers the logo horizontally */
+}
+
+.logo-image {
+  max-width: 220px; /* Adjust the maximum width of the logo as needed */
+  height: 100px; /* Maintains the aspect ratio of the logo */
+  margin: 0 auto; /* Centers the logo vertically */
+  margin-left: -50px;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+<nav>
+  <a href="https://www.yourwebsite.com" class="logo-link">
+    <img src="https://th.bing.com/th/id/OIP.4VBy-m8NUUEYfHXlviVLDwHaFS?w=270&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Your Website Logo" class="logo-image"></a>
+<label for="name" id="logo-text">
+          <a href="/">Earth Day</a>
+      </label>
+      <input type="checkbox" id="check">
+      <label for="check" class="toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+      </label>
+      <h1><center>Welcome to Our Earth Day Celebration!</center></h1>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/">Pollution Issues</a></li>
+         <li><a href="#">Contact</a></li>
+         </ul>
+     </nav>
+</header>
+</nav>
+<div class="container">  
+  <h2>  Earth Day Report Pollution Issue </h2>
+  <div class="form-control">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+  <div class="form-control">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+  </div>
+  <div class="form-control">
+    <label for="issues">Select Pollution issues:</label>
+    <select id="issues" multiple required>
+      <option value="airPollution">Air Pollution</option>
+      <option value="waterPollution">Water Pollution</option>
+      <option value="Light Pollution">Light Pollution</option>
+      <option value="soil Pollution">Soil Pollutione</option>
+      <option value="Plastic Pollution">Plastic Pollution</option>
+      <option value="Loss of Biodiversity">Loss of Biodiversity</option>
+      <option value="Renewable Energy">Radioactive Pollution</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+function submitForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var selectedIssues = [];
+  var selectElement = document.getElementById('issues');
+  for (var i = 0; i < selectElement.options.length; i++) {
+    if (selectElement.options[i].selected) {
+      selectedIssues.push(selectElement.options[i].value);
+    }
+  }
+  // You can perform further processing or send the data to a server here
+  alert("Name: " + name + "\nEmail: " + email + "\nSelected issues: " + selectedIssues.join(", "));
+}
+</script><br><br><br><br><br>
+<footer>
+        <p>© 2024 <a href="https://www.instagram.com/archana444ku?igsh=Y2dnYWV1cjYycjZz">ARCHANA KUMARI</a></p>
+      <p>Earth Day Organization</p>
+</footer>
+
+</body>
+</html>
